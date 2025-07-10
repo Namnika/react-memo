@@ -11,13 +11,13 @@ export const Child2 = ({ count }) => {
 };
 
 const MemoChallenge = () => {
-  const [count, setCount] = useState(0);
+  const [count, setCount1] = useState(0);
 
   return (
     <div>
       <Child1 text="this is  pre-defined text" />
       <Child2 count={count} />
-      <button onClick={() => setCount(count + 1)}>Increase</button>
+      <button onClick={() => setCount1(count + 1)}>Increase</button>
     </div>
   );
 };

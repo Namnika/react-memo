@@ -1,5 +1,6 @@
 import React, { useCallback, useMemo, useState } from 'react';
 import './App.css';
+import MemoChallenge from './MemoChallenge';
 
 export const Child = React.memo(({ count }) => {
 	console.log("Child Rendered");
@@ -47,6 +48,10 @@ function App() {
 			<ExpensiveComputation num={10}/>
 
 			<Button onClick={setIncrement}/>
+			<br/>
+			<br/>
+			<br/>
+			<MemoChallenge />
 		</div>
 	);
 }
